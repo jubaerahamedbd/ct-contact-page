@@ -1,3 +1,5 @@
+
+
 .content-container {
     display: flex;
     justify-content: center;
@@ -16,6 +18,49 @@
     background-color: #243C6E;
     padding: 15px 20px;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.search-box {
+    margin: auto 10px;
+    width: 300px;
+    height: 3px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.search-box>i {
+    font-size: 20px;
+    color: #243C6E;
+}
+
+.search-box>input {
+    flex: 1;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links>a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 5px;
+}
+
+.links>a:hover {
+    font-weight: bold;
 }
 
 .page-detail {
@@ -64,22 +109,10 @@ img.circle-img {
 }
 
 .logo-section {
-    flex-basis: 20%;
+    display: grid;
+    justify-items: end;
 }
 
-.search-container {
-    position: relative;
-}
-
-.search-btn {
-    position: absolute;
-    left: 0;
-}
-
-.search-container>input {
-    position: absolute;
-    left: 28px;
-}
 
 .contact-info {
     color: #4F4F4F;
@@ -504,6 +537,7 @@ i.fas.fa-map-marked-alt {
     .branch-content {
         width: 26%;
     }
+    
     .page-content-left {
         flex-basis: 30%;
     }
@@ -674,7 +708,6 @@ i.fas.fa-map-marked-alt {
         flex-basis: 100%;
         position: relative;
     }
-    
     .news-right {
         padding-right: 20px;
         flex-basis: 100%;
@@ -682,7 +715,6 @@ i.fas.fa-map-marked-alt {
         justify-content: center;
         align-items: center;
     }
-    
     .news-left>img {
         position: absolute;
         top: -330px;
