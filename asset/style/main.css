@@ -786,15 +786,15 @@ i.fas.fa-map-marked-alt {
 /*Mobile Device*/
 
 @media (min-width: 221px) and (max-width: 575px) {
-    /* nav ul {
+    nav ul {
         float: right;
         margin-left: -52px;
         padding-right: 94px;
     }
     .search-box {
         display: none;
-    } */
-    .checkbtn {
+    }
+    /* .checkbtn {
         display: block;
     }
     nav ul {
@@ -829,7 +829,7 @@ i.fas.fa-map-marked-alt {
     }
     .search-box {
         display: none;
-    }
+    } */
     img.building-img {
         margin-bottom: -4.5px;
         flex-basis: 350px;
