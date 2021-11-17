@@ -1,4 +1,43 @@
 
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0px 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 7px 12px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .content-container {
     display: flex;
@@ -24,7 +63,6 @@
 
 .search-box {
     margin: auto 10px;
-    width: 300px;
     height: 3px;
     background-color: white;
     border-radius: 25px;
@@ -79,7 +117,21 @@
 .page-content-left {
     flex-basis: 30%;
 }
-
+.page-content-left>h1 {
+    color: #243C6E;
+}
+.page-content-left>fa-map-marker-alt::before {
+    margin-right: 5px;
+    font-size: 16px;
+}
+.page-content-left>i::before {
+    margin-right: 5px;
+    font-size: 16px;
+}
+.page-content-left>i {
+    color: #4F4F4F;
+    margin-right: 5px;
+}
 .page-content-right {
     position: relative;
     padding-left: 20px;
@@ -534,10 +586,42 @@ i.fas.fa-map-marked-alt {
 /*large Device*/
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        height: 100vh;
+        background-color: #243C6E;
+        top: 65px;
+        right: -170px;
+        height: 196px; 
+        text-align: left;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px 0px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        margin-left: -30px;
+    }
+    #check:checked ~ ul{
+        right: 50px;
+        z-index: 1;
+         /* width: 263px;  */
+    /* text-align: center; */
+        /* height: 196px; */
+        top: 65px;
+    }
+
     .branch-content {
         width: 26%;
     }
-    
     .page-content-left {
         flex-basis: 30%;
     }
@@ -551,6 +635,48 @@ i.fas.fa-map-marked-alt {
 /*Medium Device*/
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        height: 100vh;
+        background-color: #243C6E;
+        top: 65px;
+        right: -170px;
+        height: 196px; 
+        text-align: left;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px 0px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        margin-left: -30px;
+    }
+    #check:checked ~ ul{
+        right: 50px;
+        z-index: 1;
+         /* width: 263px;  */
+    /* text-align: center; */
+        /* height: 196px; */
+        top: 65px;
+    }
+
+
+
+
+
+
+
+
+
+
+
     .container-item {
         flex-basis: 33%;
         margin: 0px;
@@ -575,6 +701,51 @@ i.fas.fa-map-marked-alt {
 /* Small Device*/
 
 @media (min-width: 576px) and (max-width: 767px) {
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        height: 100vh;
+        background-color: #243C6E;
+        top: 65px;
+        right: -170px;
+        height: 196px; 
+        text-align: left;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px 0px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        margin-left: -30px;
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        right: 50px;
+        z-index: 1;
+         /* width: 263px;  */
+    /* text-align: center; */
+        /* height: 196px; */
+        top: 65px;
+    }
+    .search-box {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
     .news-right {
         padding-right: 10px;
         flex-basis: 51%;
@@ -640,6 +811,14 @@ i.fas.fa-map-marked-alt {
 /*Mobile Device*/
 
 @media (min-width: 221px) and (max-width: 575px) {
+    nav ul {
+        float: right;
+        margin-left: -52px;
+        padding-right: 94px;
+    }
+    .search-box {
+        display: none;
+    }
     img.building-img {
         margin-bottom: -4.5px;
         flex-basis: 350px;
